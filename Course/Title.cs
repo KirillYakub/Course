@@ -19,7 +19,7 @@ namespace Course
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
         }
 
         private void Input_Click(object sender, EventArgs e)

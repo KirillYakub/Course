@@ -19,7 +19,7 @@ namespace Course
 
         private void Registration_form_Load(object sender, EventArgs e)
         {
-            
+            this.CenterToScreen();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -34,32 +34,25 @@ namespace Course
             name = textBox1.Text;
             surname = textBox2.Text;
             password = textBox3.Text;
+
             if(name.Length >= 3 && surname.Length >= 3 && password.Length >= 3)
             {
                 Input_Reg.size++;
-                Array.Resize(ref Input_Reg.name, Input_Reg.size + 1);
-                Array.Resize(ref Input_Reg.surname, Input_Reg.size + 1);
-                Array.Resize(ref Input_Reg.password, Input_Reg.size + 1);
+                Array.Resize(ref Input_Reg.name, Input_Reg.size);
+                Array.Resize(ref Input_Reg.surname, Input_Reg.size);
+                Array.Resize(ref Input_Reg.password, Input_Reg.size);
+
                 for (int i = Input_Reg.size - 1; i < Input_Reg.size; i++)
                 {
                     Input_Reg.name[i] = name;
                     Input_Reg.surname[i] = surname;
                     Input_Reg.password[i] = password;
+                    Input_Reg.index = i;
                 }
+
                 this.Hide();
                 Welcome welcome = new Welcome();
                 welcome.Show();
-                
-                /*
-                richTextBox1.Text += ("Ваши данные и номер регистрации:\n\n");
-                for(int i = 0; i < Input_Reg.size; i++)
-                {
-                    richTextBox1.Text += i + 1;
-                    richTextBox1.Text += ($": {Input_Reg.name[i]}");
-                    richTextBox1.Text += ($", {Input_Reg.surname[i]}");
-                    richTextBox1.Text += ($", {Input_Reg.password[i]}\n\n");
-                }
-                */
             }
             else
             {

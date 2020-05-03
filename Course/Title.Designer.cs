@@ -38,15 +38,16 @@
             // 
             this.Title_label.AutoSize = true;
             this.Title_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Title_label.Location = new System.Drawing.Point(12, 79);
+            this.Title_label.Location = new System.Drawing.Point(12, 22);
             this.Title_label.Name = "Title_label";
-            this.Title_label.Size = new System.Drawing.Size(1312, 46);
+            this.Title_label.Size = new System.Drawing.Size(931, 92);
             this.Title_label.TabIndex = 0;
-            this.Title_label.Text = "Добро пожаловать! Вам необходимо войти или зарегестрироваться\r\n";
+            this.Title_label.Text = "                        Добро пожаловать!\r\nВам необходимо войти или зарегистриров" +
+    "аться\r\n";
             // 
             // Input
             // 
-            this.Input.Location = new System.Drawing.Point(489, 210);
+            this.Input.Location = new System.Drawing.Point(305, 139);
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(315, 138);
             this.Input.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // Registration
             // 
-            this.Registration.Location = new System.Drawing.Point(489, 364);
+            this.Registration.Location = new System.Drawing.Point(305, 294);
             this.Registration.Name = "Registration";
             this.Registration.Size = new System.Drawing.Size(315, 138);
             this.Registration.TabIndex = 2;
@@ -66,9 +67,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(20, 621);
+            this.button1.Location = new System.Drawing.Point(20, 379);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 53);
             this.button1.TabIndex = 3;
@@ -80,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1346, 686);
+            this.ClientSize = new System.Drawing.Size(950, 458);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Registration);
             this.Controls.Add(this.Input);

@@ -19,7 +19,7 @@ namespace Course
 
         private void Input_form_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,14 +33,18 @@ namespace Course
         {
             int count = 0;
             string name, surname, password;
+
             name = textBox1.Text;
             surname = textBox2.Text;
             password = textBox3.Text;
+
             for (int i = 0; i < Input_Reg.size; i++)
             {
                 if (name == Input_Reg.name[i] && surname == Input_Reg.surname[i] && password == Input_Reg.password[i])
                 {
+                    Input_Reg.index = i;
                     count++;
+
                     this.Hide();
                     Welcome welcome = new Welcome();
                     welcome.Show();

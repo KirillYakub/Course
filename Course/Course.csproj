@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_input.Designer.cs">
+      <DependentUpon>Admin_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_warehouse.Designer.cs">
+      <DependentUpon>Delete_warehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functional.cs" />
     <Compile Include="Input_form.cs">
       <SubType>Form</SubType>
@@ -53,11 +65,23 @@
     <Compile Include="Input_form.Designer.cs">
       <DependentUpon>Input_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="New_warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_warehouse.Designer.cs">
+      <DependentUpon>New_warehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registration_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Registration_form.Designer.cs">
       <DependentUpon>Registration_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_warehouse.Designer.cs">
+      <DependentUpon>Search_warehouse.cs</DependentUpon>
     </Compile>
     <Compile Include="Title.cs">
       <SubType>Form</SubType>
@@ -73,11 +97,23 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_input.resx">
+      <DependentUpon>Admin_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_warehouse.resx">
+      <DependentUpon>Delete_warehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Input_form.resx">
       <DependentUpon>Input_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="New_warehouse.resx">
+      <DependentUpon>New_warehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registration_form.resx">
       <DependentUpon>Registration_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_warehouse.resx">
+      <DependentUpon>Search_warehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Title.resx">
       <DependentUpon>Title.cs</DependentUpon>
