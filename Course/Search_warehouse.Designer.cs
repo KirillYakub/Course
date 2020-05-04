@@ -61,12 +61,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.Location = new System.Drawing.Point(30, 410);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(182, 53);
             this.button1.TabIndex = 2;
             this.button1.Text = "Назад к главной странице";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
@@ -127,12 +128,13 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button4.Location = new System.Drawing.Point(854, 410);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(182, 53);
             this.button4.TabIndex = 9;
             this.button4.Text = "Вывести прайс-лист\r\n";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Search_warehouse
