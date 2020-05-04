@@ -15,12 +15,8 @@ namespace Course
         /* Администратор может открыть данную форму из Database.
            При этом Database не будет закрыта для удобства выбора склада
            для удаления. После удаления массивы информации о товарах
-           не уменьшаться с целью не нарушить индесацию, однако под удаляемым
-           индексом будет храниться пустота или нулевое значение. Важно понимать, 
-           что если администратор в дальнейшем захочет удалить склад под номером 0,
-           в котором после его первого удаления будет храниться данное значение,
-           то никакая лишняя информация не будет удалена ведь при создании склада
-           пользователь не может создать склад с вышесказанным номером. */
+           не уменьшаться с целью не нарушить индексацию, однако под удаляемым
+           индексом будет храниться пустота или нулевое значение. */
 
         public Admin_delete_warehouse()
         {
@@ -44,7 +40,7 @@ namespace Course
 
                 for (int i = 0; i < Functional.size; i++)
                 {
-                    if(number_of_delete_warehouse == Functional.number_of_warehouse[i] && password == Input_Reg.password[Input_Reg.index])
+                    if(number_of_delete_warehouse == Functional.number_of_warehouse[i] && number_of_delete_warehouse > 0 && password == Input_Reg.password[Input_Reg.index])
                     {
                         Array.Clear(Functional.product_name, i, 1);
                         Array.Clear(Functional.firm, i, 1);

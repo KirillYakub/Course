@@ -92,7 +92,7 @@ namespace Course
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(Functional.size > 0 && Functional.size > Input_Reg.index)
+            if(Functional.size > 0 && Functional.size > Input_Reg.index && Functional.product_name[Functional.index] != null)
             {
                 this.Hide();
                 Delete_warehouse delete_warehouse = new Delete_warehouse();
@@ -100,7 +100,7 @@ namespace Course
             }
             else
             {
-                MessageBox.Show("У вас никогда не было своего склада для его удаления");
+                MessageBox.Show("У вас нет своего склада для его удаления");
             }
         }
     }
