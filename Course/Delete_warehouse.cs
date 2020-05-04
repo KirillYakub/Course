@@ -12,6 +12,14 @@ namespace Course
 {
     public partial class Delete_warehouse : Form
     {
+        /* Delete_warehouse - форма удаления элементов массивов информации о товаре склада.
+           В данную форму пользователь может попасть из New_warehouse, а из нее вернуться
+           в форму Welcome. При удалении склада пользователю надо будет ввести свой пароль
+           от аккаунта. После того, как пользователь создаст свой склад в первый раз,
+           то он сможет воспользоваться данной формой бесконечное кол-во раз даже если
+           пользователь после первого удаления не создаст склад во второй раз, ведь место в памяти
+           для данных уже будет выделено. */
+
         public Delete_warehouse()
         {
             InitializeComponent();
@@ -42,8 +50,8 @@ namespace Course
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            New_warehouse new_warehouse = new New_warehouse();
-            new_warehouse.Show();
+            Welcome welcome = new Welcome();
+            welcome.Show();
         }
 
         private void Delete_warehouse_Load(object sender, EventArgs e)

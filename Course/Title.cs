@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Course
 {
+    /* Это форма Title. Здесь пользователь имеет возможность
+       войти в свой аккаунт или зарегистрироваться если аккаунта нет */
+
     public partial class Title : Form
     {
         public Title()

@@ -12,6 +12,15 @@ namespace Course
 {
     public partial class Welcome : Form
     {
+        /* Welcome - основная форма программы. Здесь
+           пользователю будут предложены практически все
+           функции сайта. При загрузке форма будет приветствовать
+           пользователя по имени, которое будет распознано формой
+           по глобальному индексу, а также будет загружено изображение.
+           У пользователя будет возможность создать свой склад,
+           найти необходимый склад, вернуться на страницу входа или регистрации,
+           а также зайти от лица администратора при наличии спец. пароля. */
+
         public Welcome()
         {
             InitializeComponent();
@@ -21,6 +30,15 @@ namespace Course
         {
             this.CenterToScreen();
             label2.Text = ($"{Input_Reg.name[Input_Reg.index]} !");
+            try
+            {
+                pictureBox1.Image = Image.FromFile(@"C:\Users\KIRILL\source\repos\Course\Pictures\Warehouse.jpg");
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch(Exception)
+            {
+                label4.Text = ("Изображение не найдено");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

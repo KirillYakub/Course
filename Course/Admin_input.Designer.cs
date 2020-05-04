@@ -32,6 +32,7 @@
             this.label = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Save_name
@@ -39,11 +40,11 @@
             this.Save_name.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Save_name.Location = new System.Drawing.Point(290, 196);
             this.Save_name.Name = "Save_name";
-            this.Save_name.Size = new System.Drawing.Size(189, 95);
+            this.Save_name.Size = new System.Drawing.Size(189, 64);
             this.Save_name.TabIndex = 6;
             this.Save_name.Text = "Войти";
             this.Save_name.UseVisualStyleBackColor = false;
-            this.Save_name.Click += new System.EventHandler(this.Save_name_Click);
+            this.Save_name.Click += new System.EventHandler(this.Admin_password);
             // 
             // label
             // 
@@ -73,11 +74,22 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Спец. пароль:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(36, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 64);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Admin_input
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 315);
+            this.ClientSize = new System.Drawing.Size(770, 288);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

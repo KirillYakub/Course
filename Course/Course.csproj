@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_delete_warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_delete_warehouse.Designer.cs">
+      <DependentUpon>Admin_delete_warehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_input.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin_input.Designer.cs">
       <DependentUpon>Admin_input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_welcome.Designer.cs">
+      <DependentUpon>Admin_welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_admin_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_admin_password.Designer.cs">
+      <DependentUpon>Change_admin_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database.Designer.cs">
+      <DependentUpon>Database.cs</DependentUpon>
     </Compile>
     <Compile Include="Delete_warehouse.cs">
       <SubType>Form</SubType>
@@ -97,8 +121,20 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_delete_warehouse.resx">
+      <DependentUpon>Admin_delete_warehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_input.resx">
       <DependentUpon>Admin_input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_welcome.resx">
+      <DependentUpon>Admin_welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_admin_password.resx">
+      <DependentUpon>Change_admin_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database.resx">
+      <DependentUpon>Database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Delete_warehouse.resx">
       <DependentUpon>Delete_warehouse.cs</DependentUpon>

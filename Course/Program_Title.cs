@@ -8,7 +8,9 @@ namespace Course
 {
     static class Program_Title
     {
-        // Главная точка входа для приложения;
+        /* В Program_Title программа начинает свою работу.
+           Будет открыта форма Title, где пользователя
+           попросят войти или зарегистрироваться. */
 
         public static Title title;
         [STAThread]

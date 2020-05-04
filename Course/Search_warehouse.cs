@@ -12,6 +12,12 @@ namespace Course
 {
     public partial class Search_warehouse : Form
     {
+        /* Форма Search_warehouse является неким поисковиком сайта.
+           Здесь пользователь может вывести прайс лист всех товаров,
+           вывести список товаров с минимальной партией 100, а также
+           найти необходимый товар по номеру склада в котором он храниться.
+           В данную форму можно попасть из формы Welcome. */
+
         public Search_warehouse()
         {
             InitializeComponent();
@@ -32,19 +38,9 @@ namespace Course
                     {
                         richTextBox1.Text += ("Доступные склады: ");
                     }
-                    richTextBox1.Text += ($"{Functional.number_of_warehouse[i]}");
-                }
-
-                if(i == Functional.size - 1 && count > 0)
-                {
-                    richTextBox1.Text += (";");
-                }
-                if(i != Functional.size - 1 && count > 0)
-                {
-                    richTextBox1.Text += (", ");
+                    richTextBox1.Text += ($"{Functional.number_of_warehouse[i]}; ");
                 }
             }
-
             if(count == 0)
             {
                 richTextBox1.Text = ($"На данный момент нет доступных складов, загляните позже");
