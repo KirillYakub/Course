@@ -92,7 +92,7 @@ namespace Course
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(Functional.size > 0 && Functional.size > Input_Reg.index)
+            if(Functional.size > 0 && Functional.size > Input_Reg.index && Functional.product_name[Input_Reg.index] != null)
             {
                 this.Hide();
                 Delete_warehouse delete_warehouse = new Delete_warehouse();

@@ -44,7 +44,7 @@ namespace Course
 
                 for (int i = 0; i < Functional.size; i++)
                 {
-                    if(number_of_delete_warehouse == Functional.number_of_warehouse[i] && password == Input_Reg.password[Input_Reg.index])
+                    if(number_of_delete_warehouse == Functional.number_of_warehouse[i] && number_of_delete_warehouse > 0 && password == Input_Reg.password[Input_Reg.index])
                     {
                         Array.Clear(Functional.product_name, i, 1);
                         Array.Clear(Functional.firm, i, 1);
