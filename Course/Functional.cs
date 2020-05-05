@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Course
 {
+    /* В данных массивах храниться вся информация
+       о пользователях и складах. */
+
     public class Functional
     {
         public static int size, index;
