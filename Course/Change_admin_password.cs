@@ -60,5 +60,11 @@ namespace Course
             Admin_welcome admin_welcome = new Admin_welcome();
             admin_welcome.Show();
         }
+
+        private void Change_admin_password_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Admin_reference admin_Reference = new Admin_reference();
+            admin_Reference.Show();
+        }
     }
 }

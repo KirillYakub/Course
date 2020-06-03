@@ -60,5 +60,11 @@ namespace Course
             Welcome welcome = new Welcome();
             welcome.Show();
         }
+
+        private void Admin_input_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
+        }
     }
 }

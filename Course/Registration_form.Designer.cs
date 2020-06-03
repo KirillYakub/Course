@@ -143,6 +143,7 @@
             this.Name = "Registration_form";
             this.Text = "Registration_form";
             this.Load += new System.EventHandler(this.Registration_form_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Registration_form_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

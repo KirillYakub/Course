@@ -155,6 +155,7 @@
             this.Name = "Search_warehouse";
             this.Text = "Search_warehouse";
             this.Load += new System.EventHandler(this.Search_warehouse_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Search_warehouse_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

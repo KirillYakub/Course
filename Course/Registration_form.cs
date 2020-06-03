@@ -77,5 +77,11 @@ namespace Course
             Title title = new Title();
             title.Show();
         }
+
+        private void Registration_form_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
+        }
     }
 }

@@ -97,11 +97,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(2, 226);
+            this.label4.Location = new System.Drawing.Point(11, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(260, 29);
+            this.label4.Size = new System.Drawing.Size(251, 29);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Повт. старый пароль:";
+            this.label4.Text = "Повт. новый пароль:";
             // 
             // button1
             // 
@@ -141,6 +141,7 @@
             this.Name = "Change_admin_password";
             this.Text = "Change_admin_password";
             this.Load += new System.EventHandler(this.Change_admin_password_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Change_admin_password_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

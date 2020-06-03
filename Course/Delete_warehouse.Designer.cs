@@ -100,6 +100,7 @@
             this.Name = "Delete_warehouse";
             this.Text = "Delete_warehouse";
             this.Load += new System.EventHandler(this.Delete_warehouse_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Delete_warehouse_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

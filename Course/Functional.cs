@@ -22,7 +22,7 @@ namespace Course
 
     public class Input_Reg
     {
-        public static int size, index;
+        public static int size, index, first_input;
         public static string []name = new string[size];
         public static string []surname = new string[size];
         public static string []password = new string[size];

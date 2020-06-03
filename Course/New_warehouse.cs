@@ -88,6 +88,16 @@ namespace Course
         {
             this.CenterToScreen();
             MessageBox.Show("Добро пожаловать на страницу создания склада! Если вы не создавали склад раньше, то можете сделать это сейчас. В противном случае данные склада будут изменены после ввода");
+
+            if(Functional.size > 0 && Functional.size > Input_Reg.index && Functional.product_name[Input_Reg.index] != null)
+            {
+                textBox1.Text = ($"{Functional.product_name[Input_Reg.index]}");
+                textBox2.Text = ($"{Functional.firm[Input_Reg.index]}");
+                textBox3.Text = ($"{Functional.price[Input_Reg.index]}");
+                textBox4.Text = ($"{Functional.quantity[Input_Reg.index]}");
+                textBox5.Text = ($"{Functional.number_of_warehouse[Input_Reg.index]}");
+                textBox6.Text = ($"{Functional.min_party[Input_Reg.index]}");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -100,8 +110,14 @@ namespace Course
             }
             else
             {
-                MessageBox.Show("У вас никогда не было своего склада для его удаления");
+                MessageBox.Show("У вас нет своего склада для его удаления");
             }
+        }
+
+        private void New_warehouse_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
         }
     }
 }

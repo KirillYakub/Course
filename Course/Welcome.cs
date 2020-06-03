@@ -75,5 +75,11 @@ namespace Course
             Admin_input admin_input = new Admin_input();
             admin_input.Show();
         }
+
+        private void Welcome_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
+        }
     }
 }

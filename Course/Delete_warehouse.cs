@@ -55,5 +55,11 @@ namespace Course
         {
             this.CenterToScreen();
         }
+
+        private void Delete_warehouse_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
+        }
     }
 }

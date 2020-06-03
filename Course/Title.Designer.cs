@@ -32,6 +32,7 @@
             this.Input = new System.Windows.Forms.Button();
             this.Registration = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Title_label
@@ -49,7 +50,7 @@
             // 
             this.Input.Location = new System.Drawing.Point(305, 139);
             this.Input.Name = "Input";
-            this.Input.Size = new System.Drawing.Size(315, 138);
+            this.Input.Size = new System.Drawing.Size(315, 82);
             this.Input.TabIndex = 1;
             this.Input.Text = "Вход";
             this.Input.UseVisualStyleBackColor = true;
@@ -57,9 +58,9 @@
             // 
             // Registration
             // 
-            this.Registration.Location = new System.Drawing.Point(305, 294);
+            this.Registration.Location = new System.Drawing.Point(305, 238);
             this.Registration.Name = "Registration";
-            this.Registration.Size = new System.Drawing.Size(315, 138);
+            this.Registration.Size = new System.Drawing.Size(315, 82);
             this.Registration.TabIndex = 2;
             this.Registration.Text = "Регистрация\r\n";
             this.Registration.UseVisualStyleBackColor = true;
@@ -77,11 +78,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(258, 379);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(412, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Нажмите F1 в любой вкладке для открытия справки";
+            // 
             // Title
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 458);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Registration);
             this.Controls.Add(this.Input);
@@ -89,6 +100,7 @@
             this.Name = "Title";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Title_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +112,7 @@
         private System.Windows.Forms.Button Input;
         private System.Windows.Forms.Button Registration;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

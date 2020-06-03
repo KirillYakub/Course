@@ -111,6 +111,7 @@
             this.Name = "Admin_welcome";
             this.Text = "Admin_welcome";
             this.Load += new System.EventHandler(this.Admin_welcome_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Admin_welcome_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

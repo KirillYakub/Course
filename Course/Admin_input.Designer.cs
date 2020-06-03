@@ -98,6 +98,7 @@
             this.Name = "Admin_input";
             this.Text = "Admin_input";
             this.Load += new System.EventHandler(this.Admin_input_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Admin_input_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

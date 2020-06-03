@@ -64,5 +64,11 @@ namespace Course
                 MessageBox.Show("Пользователя с такими данными не найдено, проверьте корректность ввода");
             }
         }
+
+        private void Input_form_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
+        }
     }
 }

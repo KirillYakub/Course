@@ -31,7 +31,7 @@ namespace Course
         private void button1_Click(object sender, EventArgs e)
         {
             string password;
-            int number_of_delete_warehouse;
+            int number_of_delete_warehouse, count = 0;
 
             try
             {
@@ -48,14 +48,14 @@ namespace Course
                         Array.Clear(Functional.quantity, i, 1);
                         Array.Clear(Functional.number_of_warehouse, i, 1);
                         Array.Clear(Functional.min_party, i, 1);
-
+                        count++;
                         MessageBox.Show($"Удаление склада прошло успешно, перезагрузите страницу для обновления информации");
                         break;
                     }
-                    else
-                    {
-                        MessageBox.Show("Пароль или номер введен некорректно, попробуйте еще раз");
-                    }
+                }
+                if(count == 0)
+                {
+                    MessageBox.Show("Пароль или номер введен некорректно, попробуйте еще раз");
                 }
             }
             catch (Exception exc)
@@ -67,6 +67,12 @@ namespace Course
         private void Admin_delete_warehouse_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+        }
+
+        private void Admin_delete_warehouse_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Admin_reference admin_Reference = new Admin_reference();
+            admin_Reference.Show();
         }
     }
 }

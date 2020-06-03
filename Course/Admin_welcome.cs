@@ -55,5 +55,11 @@ namespace Course
             Database database = new Database();
             database.Show();
         }
+
+        private void Admin_welcome_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Admin_reference admin_Reference = new Admin_reference();
+            admin_Reference.Show();
+        }
     }
 }

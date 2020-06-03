@@ -222,6 +222,7 @@
             this.Name = "New_warehouse";
             this.Text = "New_warehouse";
             this.Load += new System.EventHandler(this.New_warehouse_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.New_warehouse_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

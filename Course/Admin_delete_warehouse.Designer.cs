@@ -122,6 +122,7 @@
             this.Name = "Admin_delete_warehouse";
             this.Text = "Admin_delete_warehouse";
             this.Load += new System.EventHandler(this.Admin_delete_warehouse_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Admin_delete_warehouse_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

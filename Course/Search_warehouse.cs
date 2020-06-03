@@ -122,5 +122,11 @@ namespace Course
                 richTextBox3.Text += ("На данный момент нет доступных товаров, загляните позже\n\n");
             }
         }
+
+        private void Search_warehouse_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Reference reference = new Reference();
+            reference.Show();
+        }
     }
 }

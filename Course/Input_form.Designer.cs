@@ -142,6 +142,7 @@
             this.Name = "Input_form";
             this.Text = "Input_form";
             this.Load += new System.EventHandler(this.Input_form_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Input_form_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 
